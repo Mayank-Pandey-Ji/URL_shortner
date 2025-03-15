@@ -1,7 +1,7 @@
 import Ushort from "../Models/URLmodel.js";
 import { nanoid } from "nanoid"; // nanoid ka correct import
 
-export const uploadURL = async (req, res) => {  // ✅ Sahi export
+export const uploadURL = async (req, res) => { 
     const url_id = nanoid(7); // thala for a reason 
     const { url } = req.body;
     

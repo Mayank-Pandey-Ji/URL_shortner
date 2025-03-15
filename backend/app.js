@@ -8,5 +8,10 @@ app.use(express.json());
 app.use(cors());
 app.post('/',uploadURL);
 app.get('/:id' , getUrl)
+app.get('/' , (req ,res) =>{
+    res.json({
+        message :"for testing purpose"
+    });
+})
 
 export default app;

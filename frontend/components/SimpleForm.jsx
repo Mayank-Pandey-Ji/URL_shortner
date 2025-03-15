@@ -18,7 +18,6 @@ export default function SimpleForm() {
     const data = await response.json();
     setOutputValue(data.id);
     setFlag(true);
-    console.log(data.id);
   };
 
   const handleCopy = async () => {

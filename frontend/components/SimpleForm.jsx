@@ -8,6 +8,7 @@ export default function SimpleForm() {
     e.preventDefault();
     const response = await fetch("https://link-conciser.vercel.app/" , {
       method :"POST",
+      credentials: "include",
       headers: {
         "Content-Type": "application/json",
       },

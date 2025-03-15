@@ -4,7 +4,10 @@ import {getUrl} from './controllers/urlController.js'
 import cors from 'cors'
 const app = express();
 app.use(cors({
-    origin: "https://url-consiser.vercel.app/"
+    origin: "https://url-consiser.vercel.app",  // Replace with your frontend URL
+  methods: "GET,POST",
+  allowedHeaders: "Content-Type,Authorization",
+  credentials: true
 }));
 app.use(express.json());
 app.use(cors());

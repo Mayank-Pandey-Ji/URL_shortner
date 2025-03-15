@@ -12,7 +12,7 @@ export const uploadURL = async (req, res) => {
         });
 
         res.status(200).json({
-            id : `http://localhost:3000/${urlshort.url_id}`
+            id : `https://link-conciser.vercel.app/${urlshort.url_id}`
         });
     } catch (err) {
         res.status(404).json({

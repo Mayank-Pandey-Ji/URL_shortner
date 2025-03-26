@@ -12,7 +12,7 @@ export const uploadURL = async (req, res) => {
         });
 
         res.status(200).json({
-            id : `https://link-conciser.vercel.app/${urlshort.url_id}`
+            id : `https://url-shortner-1-jiqo.onrender.com/${urlshort.url_id}`
         });
     } catch (err) {
         res.status(404).json({

@@ -6,7 +6,7 @@ export default function SimpleForm() {
   const [flag , setFlag] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://link-conciser.vercel.app/" , {
+    const response = await fetch("https://url-shortner-1-jiqo.onrender.com/" , {
       method :"POST",
       credentials: "include",
       headers: {
